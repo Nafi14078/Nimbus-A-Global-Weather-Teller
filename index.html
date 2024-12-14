@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nimbus-A Global Weather Teller</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Nimbus-A Global Weather Teller</h1>
+
+      <!-- Search Bar -->
+      <div class="search-bar">
+        <input type="text" id="city" placeholder="Enter a city name" />
+        <button id="submit">Search</button>
+      </div>
+
+      <!-- Weather Information Display -->
+      <div class="weather-info">
+        <fieldset>
+          <legend><h2>Weather Information</h2></legend>
+
+          <p><b>City:</b> <span id="cityName">N/A</span></p>
+
+          <p><b>Temperature:</b> <span id="temperature">N/A</span> °C</p>
+          <p><b>Wind Speed:</b> <span id="windSpeed">N/A</span> km/h</p>
+          <p><b>Weather Code:</b> <span id="weatherCode">N/A</span></p>
+          <p><b>Weather(Sky):</b> <span id="weatherDescription">N/A</span></p>
+        </fieldset>
+      </div>
+
+      <!-- Table for Fixed Cities -->
+      <h2>Weather of Some Cities in Bangladesh</h2>
+      <table class="city-table">
+        <thead>
+          <tr>
+            <th>City</th>
+            <th>Temperature (°C)</th>
+            <th>Wind Speed (km/h)</th>
+            <th>Weather Code</th>
+            <th>Weather(Sky)</th>
+          </tr>
+        </thead>
+        <tbody id="cityTableBody">
+          <!-- Table rows will be dynamically added here -->
+        </tbody>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
