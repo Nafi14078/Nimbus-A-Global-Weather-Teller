@@ -8,7 +8,7 @@
       }
 
       .container {
-        margin-top: 0px;
+        margin-top: 0%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -20,12 +20,13 @@
       
       .container {
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        padding: 20px;
+        padding: 1.2rem;
         background-color: #fff;
       }
 
       h1 {
         text-align: center;
+        padding-bottom: 2rem;
       }
     .weather-info p{
         text-align:justify;
@@ -33,29 +34,32 @@
     .container h1{
         color: purple;
     }
+    h2{
+      padding-top: 1rem;
+    }
     
 
       .search-bar {
         display: flex;
-        gap: 10px;
-        margin-bottom: 20px;
+        gap:0.3rem;
+        margin-bottom: 1rem;
       }
 
       input[type="text"] {
         flex: 1;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #996c6c;
-        border-radius: 5px;
+        padding: 0.8rem;
+        font-size: 1rem;
+        border: 0.1rem solid #996c6c;
+        border-radius: 0.5rem;
       }
 
       button {
-        padding: 10px 20px;
-        font-size: 16px;
+        padding: 0.6rem 1.2rem;
+        font-size: 1rem;
         color: #fff;
         background-color:black;
         border: none;
-        border-radius: 5px;
+        border-radius: 0.5rem;
         cursor: pointer;
       }
 
@@ -64,25 +68,26 @@
       }
 
       .weather-info {
-        margin-top: 20px;
+        margin-top: 1.2rem;
         text-align: center;
       }
 
       .weather-info p {
-        font-size: 18px;
-        margin: 10px 0;
+        font-size: 1.1rem;
+        margin: 0.6rem 0;
       }
 
       .city-table {
-        margin-top: 30px;
+        margin-top: 1.9rem;
         width: 100%;
         border-collapse: collapse;
       }
+      
 
       .city-table th,
       .city-table td {
-        border: 1px solid #ddd;
-        padding: 10px;
+        border: 0.0625rem solid #ddd;
+        padding: 0.625rem;
         text-align: center;
       }
 
@@ -94,4 +99,74 @@
       .city-table td {
         background-color: #f9f9f9;
       }
+      
+      @media (max-width: 768px) {
+        .container {
+          padding: 1rem;
+        }
+      
+        h1 {
+          font-size: 1.5rem;
+        }
+      
+        input[type="text"] {
+          font-size: 0.9rem;
+          padding: 0.6rem;
+        }
+      
+        button {
+          font-size: 0.9rem;
+          padding: 0.5rem 1rem;
+        }
+      
+        .city-table {
+          width: 100%;
+          
+          margin: 1.9rem auto 0.3rem auto;
+          display: block;
+          overflow-x: auto;
+          white-space: nowrap;
+        }
+      }
+      
+      @media (max-width: 480px) {
+        .container {
+          padding: 1rem;
+        }
+      
+        h1 {
+          font-size: 1.3rem;
+        }
+       h2{
+        font-size: 1.3rem;
+        text-align: center;
+       }
+      
+        .search-bar {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 0.5rem;
+        }
+        button {
+          
+          padding: 0.6rem 1rem;
+          font-size: 1rem;
+          color: #fff;
+          background-color:black;
+          border: none;
+          border-radius: 0.5rem;
+          cursor: pointer;
+        }
+      
+        input[type="text"] {
+          width: 100%;
+        }
+      
+        button {
+          width: 50%;
+        }
+       
+      }
+      
     
